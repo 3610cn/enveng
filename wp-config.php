@@ -17,7 +17,7 @@
 $dbname = 'enveng';
  
 /*从环境变量里取出数据库连接需要的参数*/
-$host = '127.0.0.1';
+$host = 'localhost';
 $port = '3306';
 $user = 'root';
 $pwd = 'root@do';
