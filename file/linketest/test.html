@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./normal.css">
+  <style>
+    *, :after, :before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    #root .lingke-apply-wraper {
+      background-color: #f2f2f2;
+      height: 100%;
+    }
+    #root .navbar {
+      height: 45px;
+    }
+    #root .lingke-scroll-container .lingke-commit-block {
+      margin-top: 5px;
+      background-color: #fff;
+    }
+    #root .lingke-scroll-container .lingke-commit-block .block-area {
+      padding: 0 10px 10px;
+    }
+    .am-list-item {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        padding-left: 15px;
+        min-height: 44px;
+        background-color: #fff;
+        vertical-align: middle;
+        overflow: hidden;
+        -webkit-transition: background-color .2s;
+        -o-transition: background-color .2s;
+        transition: background-color .2s;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .am-textarea-control {
+        -ms-flex: 1;
+        flex: 1 1;
+        padding-top: 10px;
+        padding-bottom: 9px;
+    }
+    .am-textarea-control textarea {
+      color: #000;
+      font-size: 17px;
+      line-height: 25.5px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background-color: transparent;
+      overflow: visible;
+      display: block;
+      resize: none;
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+
+    #root .lingke-scroll-container .lingke-commit-btn-block {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .am-button {
+        display: block;
+        outline: 0 none;
+        -webkit-appearance: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        text-align: center;
+        font-size: 18px;
+        height: 47px;
+        line-height: 47px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        white-space: nowrap;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .am-button-primary {
+        color: #fff;
+        background-color: #108ee9;
+        border: 1px solid #108ee9;
+        border-radius: 5px;
+    }
+
+    @media not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      html:not([data-scale]) .am-button-primary {
+          position: relative;
+          border: none;
+      }
+    }
+
+    @media not all, (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      html:not([data-scale]) .am-button:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(.5);
+        -ms-transform: scale(.5);
+        transform: scale(.5);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        pointer-events: none;
+      }
+    }
+    a {
+        background: transparent;
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="lingke-apply-wraper">
+      <div class="navbar">期权佣金</div>
+      <div class="lingke-scroll-container">
+        <div class="lingke-commit-block">
+          <div class="block-area">
+            <div class="am-list-item am-textarea-item">
+              <div class="am-textarea-control">
+                  <textarea rows="5"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lingke-commit-btn-block">
+          <a class="am-button am-button-primary">
+            <span>提交</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
